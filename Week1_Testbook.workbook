@@ -1,0 +1,21 @@
+---
+uti: com.xamarin.workbook
+id: 233137e5-60ea-4da5-bc41-bdc5ba8bb83d
+title: Week1_Testbook
+platforms:
+- WPF
+---
+
+This is an example of a **for loop**!
+
+```csharp
+int count = 0;
+
+for(int i = 0; i < 10; i++){
+    count++;
+}
+
+return count;
+```
+
+As you can see, the loop will execute *ten times.*
