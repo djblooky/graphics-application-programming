@@ -1,0 +1,60 @@
+﻿---
+id: 6b6c224f-07e3-4b6e-b006-c5291041792f
+uti: com.xamarin.workbook
+title: "UrhoSharp: Animated Model"
+platforms:
+- Console
+packages:
+- id: UrhoSharp
+  version: 1.5.22
+---
+
+# Animated Models
+
+UrhoSharp is a powerful 3D game engine for Xamarin and .NET developers. It is similar in spirit to Apple’s SceneKit and SpriteKit and includes physics, navigation, networking, and much more...while still being cross-platform.
+
+```csharp
+#r "Urho"
+
+using Urho;
+using Urho.Actions;
+using Urho.Shapes;
+using Urho.Gui;
+using Urho.Urho2D;
+
+using System.IO;
+```
+
+```csharp
+var app = SimpleApplication.Show (
+	new ApplicationOptions ("Data") {
+		Width = 800, 
+		Height = 800 });
+```
+
+We have created a window containing a `SimpleApplication`.
+
+Loading the Mutant model via AnimatedModel component, and play "Idle" looped animation by default.
+
+```csharp
+app.RootNode.RemoveAllChildren();
+var node = app.RootNode.CreateChild();
+var mutantModel = node.CreateComponent<AnimatedModel>();
+mutantModel.Model = app.ResourceCache.GetModel("Models/Mutant.mdl");
+mutantModel.SetMaterial(app.ResourceCache.GetMaterial("Materials/mutant_M.xml"));
+node.SetScale(2.5f);
+var animation = node.CreateComponent<AnimationController>();
+animation.Play("Animations/Mutant_Idle0.ani", 0, true, 0.2f);
+node.Position = new Vector3(0, -2f, 0.2f);
+```
+
+Enumerate all available animations
+
+```csharp
+var aniFiles = System.IO.Directory.GetFiles("Data/Animations").Select(i => Path.GetFileName(i)).ToArray();
+```
+
+```csharp
+animation.StopAll(0);
+animation.Play($"Animations/{aniFiles[9]}", 0, true, 0.2f);
+```

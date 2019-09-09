@@ -1,0 +1,21 @@
+{
+  "order":{
+    "alerts/alerts.workbook":"Alert",
+    "button/button.workbook":"Button",
+    "editor/editor.workbook":"Editor",
+    "entry/entry.workbook":"Entry",
+    "image/image.workbook":"Image",
+    "label/label.workbook":"Label",
+    "layout-options/layout-options.workbook":"Layout Options",
+    "listview/ListView.workbook":"ListView",
+    "map/map.workbook":"Map",
+    "margins-padding/margins-and-padding/index.workbook":"Margins & Padding",
+    "picker/picker.workbook":"Picker",
+    "slider/slider.workbook":"Slider",
+    "stacklayout/stacklayout.workbook":"Stack Layout",
+    "switch/switch.workbook":"Switch",
+    "tabbedpage/tabbedpage.workbook":"Tabbed Page",
+    "webview/webview.workbook":"Web View",
+    "xaml/LoadXaml.workbook":"Loading XAML in Workbooks"
+  }
+}

@@ -1,0 +1,14 @@
+﻿{
+  "order":{
+    "coordinates/ExploringUrhoCoordinates.workbook":"Exploring Urho Coordinates",
+    "compound-shapes/CreatingUrhoCompoundShapes.workbook":"Creating Compound Shapes (Quadcopter)",
+    "custom-geometries/CustomGeometries.workbook":"Working with Urho Custom Geometries",
+    "building-polyhedra/BuildingPolyhedra.workbook":"Building Polyhedra with UrhoSharp (Stellations of the Dodecahedron)",
+    "animated-model/animated-model.workbook":"Animated Model",
+    "barchart/charts.workbook":"Charts",
+    "physics/physics.workbook":"Physics",
+    "planetearth/planetearth.workbook":"Planet Earth",
+    "mobius-strip-speedway/MobiusStripSpeedway.workbook": "Möbius Strip Speedway",
+    "circle-of-life/CircleOfLife.workbook": "Circle of Life: Actions and Animations"
+  }
+}
